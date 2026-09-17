@@ -1,0 +1,6 @@
+{
+  "name": "AH Property",
+  "description": "Real Estate Consultant in Silicon City, Indore",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

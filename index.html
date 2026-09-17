@@ -1,0 +1,1647 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>AH Property</title>
+    <meta name="title" content="AH Property" />
+    <meta name="description" content="Real Estate Consultant in Silicon City, Indore" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ahpropertyindore.com/" />
+    <meta property="og:title" content="AH Property" />
+    <meta property="og:description" content="Real Estate Consultant in Silicon City, Indore" />
+    <meta property="og:site_name" content="AH Property" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AH Property" />
+    <meta name="twitter:description" content="Real Estate Consultant in Silicon City, Indore" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD for LocalBusiness & RealEstateAgent -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "AH Property",
+      "alternateName": "आह प्रॉपर्टी",
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "@id": "https://ahpropertyindore.com",
+      "url": "https://ahpropertyindore.com",
+      "telephone": "+919479427773",
+      "priceRange": "₹₹ - ₹₹₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "B62, Silicon City",
+        "addressLocality": "Indore",
+        "addressRegion": "Madhya Pradesh",
+        "postalCode": "452012",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 22.6457,
+        "longitude": 75.8367
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "20:30"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "83",
+        "reviewCount": "83"
+      }
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN for instant standalone browser & Netlify rendering without build tools -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Cinzel', 'Georgia', 'serif'],
+              display: ['Cinzel', 'Georgia', 'serif'],
+              sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif']
+            },
+            colors: {
+              gold: {
+                400: '#F6D888',
+                500: '#D4AF37',
+                600: '#B38E22',
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      :root {
+        --font-serif: 'Cinzel', Georgia, serif;
+        --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        --color-navy-dark: #070D18;
+        --color-navy-base: #0B1325;
+        --color-navy-card: #111C35;
+        --color-navy-border: #1E2D4E;
+        --color-gold-light: #F6D888;
+        --color-gold-base: #D4AF37;
+        --color-gold-deep: #B38E22;
+        --color-cream-bg: #FBFBFC;
+        --color-cream-card: #FFFFFF;
+        --color-text-main: #0F172A;
+        --color-text-muted: #64748B;
+        --color-text-light: #94A3B8;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        color: var(--color-text-main);
+        background-color: var(--color-cream-bg);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        padding-bottom: 70px; /* space for mobile sticky bar */
+      }
+
+      @media (min-width: 768px) {
+        body {
+          padding-bottom: 0;
+        }
+      }
+
+      h1, h2, h3, h4, .font-display {
+        font-family: var(--font-serif);
+        letter-spacing: -0.01em;
+      }
+
+      .gold-gradient-text {
+        background: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #B38E22 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .gold-btn {
+        background: linear-gradient(135deg, #DFB743 0%, #C89F2A 100%);
+        color: #070D18;
+        font-weight: 700;
+        transition: all 0.25s ease;
+        box-shadow: 0 4px 14px rgba(212, 175, 55, 0.25);
+      }
+      .gold-btn:hover {
+        background: linear-gradient(135deg, #ECD168 0%, #D4AF37 100%);
+        transform: translateY(-1px);
+        box-shadow: 0 6px 20px rgba(212, 175, 55, 0.35);
+      }
+
+      .whatsapp-btn {
+        background: #25D366;
+        color: #FFFFFF;
+        font-weight: 600;
+        transition: all 0.25s ease;
+      }
+      .whatsapp-btn:hover {
+        background: #20BA5A;
+        transform: translateY(-1px);
+        box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+      }
+
+      .property-card {
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+      .property-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 32px rgba(11, 19, 37, 0.08);
+      }
+
+      .pulse-glow {
+        animation: pulseAnimation 2.5s infinite;
+      }
+      @keyframes pulseAnimation {
+        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+        70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      }
+
+      /* Custom filter tabs */
+      .filter-tab.active {
+        background-color: var(--color-navy-base);
+        color: #FFFFFF;
+        border-color: var(--color-navy-base);
+      }
+
+      /* Subtle Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0B1325;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2A3B60;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body class="selection:bg-amber-200 selection:text-slate-900">
+
+    <!-- TOP ANNOUNCEMENT / TRUST BAR -->
+    <div class="bg-[#050912] text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-1 text-amber-400 font-semibold">
+            <svg class="w-3.5 h-3.5 fill-amber-400" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            4.9 Rating (83 Google Reviews)
+          </span>
+          <span class="text-slate-600 hidden md:inline">•</span>
+          <span class="hidden md:inline text-slate-300">Office: B62, Silicon City, Indore</span>
+        </div>
+        <div class="flex items-center gap-4 text-slate-300">
+          <span class="inline-flex items-center gap-1.5 text-emerald-400">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            Open Daily till 8:30 PM
+          </span>
+          <span class="text-slate-600">•</span>
+          <a href="tel:+919479427773" class="hover:text-amber-300 transition-colors font-medium">
+            📞 094794 27773
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN HEADER NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-[#070D18]/95 backdrop-blur-md border-b border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        <!-- Brand Logo -->
+        <a href="#hero" class="flex items-center gap-3 text-decoration-none group">
+          <div class="w-11 h-11 rounded-lg bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center font-serif text-[#070D18] font-bold text-xl shadow-lg group-hover:scale-105 transition-transform">
+            AH
+          </div>
+          <div>
+            <div class="font-display text-lg sm:text-xl font-bold tracking-tight text-white flex items-center gap-1.5">
+              AH PROPERTY
+              <span class="text-xs font-normal text-amber-400/90 font-sans tracking-normal bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">आह प्रॉपर्टी</span>
+            </div>
+            <p class="text-[11px] text-slate-400 font-medium tracking-wide uppercase">Real Estate Consultant • Indore</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+          <a href="#properties" class="hover:text-amber-400 transition-colors">Featured Listings</a>
+          <a href="#about" class="hover:text-amber-400 transition-colors">Why Pratik?</a>
+          <a href="#services" class="hover:text-amber-400 transition-colors">Services</a>
+          <a href="#after-sale" class="hover:text-amber-400 transition-colors">After-Sale Support</a>
+          <a href="#reviews" class="hover:text-amber-400 transition-colors">Client Reviews</a>
+          <a href="#localities" class="hover:text-amber-400 transition-colors">Indore Localities</a>
+          <a href="#calculator" class="hover:text-amber-400 transition-colors">EMI Calc</a>
+        </nav>
+
+        <!-- Right Action Button (Desktop) -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/919479427773?text=Hello%20Pratik%20ji,%20I%20am%20looking%20for%20property%20consultation%20in%20Indore." target="_blank" rel="noopener noreferrer" class="whatsapp-btn px-4 py-2.5 rounded-lg text-sm inline-flex items-center gap-2 shadow-sm">
+            <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.838.79 2.796.79 3.184 0 5.77-2.587 5.77-5.766.001-3.182-2.585-5.766-5.77-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.802 0-3.486-.481-4.945-1.319l-5.055 1.383 1.396-5.027c-.908-1.527-1.396-3.272-1.396-5.037 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+            <span>WhatsApp Pratik</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobileMenuBtn" aria-label="Toggle navigation menu" class="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">
+          <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+          <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobileMenu" class="hidden lg:hidden bg-[#070D18] border-b border-slate-800 px-4 pt-3 pb-6 space-y-3">
+        <a href="#properties" class="mobile-nav-link block py-2 text-slate-200 hover:text-amber-400 font-medium">Featured Properties</a>
+        <a href="#about" class="mobile-nav-link block py-2 text-slate-200 hover:text-amber-400 font-medium">Why Pratik Ji? (Founder Story)</a>
+        <a href="#services" class="mobile-nav-link block py-2 text-slate-200 hover:text-amber-400 font-medium">Services Offered</a>
+        <a href="#after-sale" class="mobile-nav-link block py-2 text-slate-200 hover:text-amber-400 font-medium">After-Sale Utility Support</a>
+        <a href="#reviews" class="mobile-nav-link block py-2 text-slate-200 hover:text-amber-400 font-medium">Client Reviews (83 Google Reviews)</a>
+        <a href="#localities" class="mobile-nav-link block py-2 text-slate-200 hover:text-amber-400 font-medium">Indore Localities Covered</a>
+        <a href="#calculator" class="mobile-nav-link block py-2 text-slate-200 hover:text-amber-400 font-medium">Loan EMI Calculator</a>
+        <a href="#contact" class="mobile-nav-link block py-2 text-slate-200 hover:text-amber-400 font-medium">Contact Office B62</a>
+        <div class="pt-3 flex flex-col gap-2">
+          <a href="tel:+919479427773" class="w-full text-center py-2.5 rounded-lg bg-slate-800 text-white font-medium text-sm">📞 Direct Call: 094794 27773</a>
+          <a href="https://wa.me/919479427773?text=Hello%20Pratik%20ji,%20I%20need%20property%20assistance%20in%20Indore." target="_blank" rel="noopener noreferrer" class="w-full text-center py-2.5 rounded-lg whatsapp-btn text-sm font-semibold">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION (DARK LUXURY WITH GOLD ACCENTS) -->
+    <section id="hero" class="relative bg-[#070D18] text-white pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden border-b border-slate-800">
+      <!-- Background Ambient Glows -->
+      <div class="absolute top-0 right-0 -mr-32 -mt-32 w-96 h-96 rounded-full bg-amber-500/10 blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 left-0 -ml-32 -mb-32 w-96 h-96 rounded-full bg-blue-600/10 blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Hero Column -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <!-- Google Trust & Inclusive Badge Strip -->
+            <div class="flex flex-wrap items-center gap-2.5">
+              <div class="inline-flex items-center gap-2 bg-[#111C35] border border-amber-500/30 rounded-full px-3.5 py-1.5 text-xs font-medium">
+                <span class="flex items-center text-amber-400">
+                  ★★★★★
+                </span>
+                <span class="text-white font-bold">4.9 / 5.0</span>
+                <span class="text-slate-400">(83 Google Reviews)</span>
+              </div>
+              
+              <!-- Subtle Understated LGBTQ+ Friendly Badge -->
+              <span class="inline-flex items-center gap-1.5 bg-slate-800/80 text-slate-300 border border-slate-700/80 rounded-full px-3 py-1.5 text-xs font-normal" title="LGBTQ+ Friendly Space">
+                <svg class="w-3 h-3 text-pink-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                LGBTQ+ Friendly Consultant
+              </span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+              Find the Right Property in Indore with <span class="gold-gradient-text">Complete Peace of Mind.</span>
+            </h1>
+
+            <!-- Narrative Paragraph -->
+            <p class="text-base sm:text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
+              Led by <strong class="text-amber-300 font-semibold">Pratik</strong>, AH Property delivers transparent, zero-hassle guidance across Silicon City, Rau, and prime Indore localities. From flats and residential plots to seamless <strong class="text-white">post-deal after-sale utility support</strong> (electrician, plumber & cleaning), we are your lifetime property partner.
+            </p>
+
+            <!-- Key Trust Bullets -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm text-slate-300">
+              <div class="flex items-center gap-2.5">
+                <div class="w-5 h-5 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs">✓</div>
+                <span>Direct Personal Brokerage by Pratik Ji</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <div class="w-5 h-5 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs">✓</div>
+                <span>Flats, Plots, Row Houses & Rentals</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <div class="w-5 h-5 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs">✓</div>
+                <span>100% Clear Title Verification</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <div class="w-5 h-5 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs">✓</div>
+                <span>Continuous Support Even After Closing</span>
+              </div>
+            </div>
+
+            <!-- Hero Action Buttons -->
+            <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a href="https://wa.me/919479427773?text=Namaste%20Pratik%20ji,%20I%20am%20looking%20for%20a%20property%20in%20Silicon%20City%20/%20Indore.%20Please%20guide%20me." target="_blank" rel="noopener noreferrer" class="gold-btn px-7 py-4 rounded-xl text-center text-base font-bold inline-flex items-center justify-center gap-2">
+                <span>Enquire on WhatsApp</span>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.838.79 2.796.79 3.184 0 5.77-2.587 5.77-5.766.001-3.182-2.585-5.766-5.77-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.802 0-3.486-.481-4.945-1.319l-5.055 1.383 1.396-5.027c-.908-1.527-1.396-3.272-1.396-5.037 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+              </a>
+              
+              <a href="#properties" class="px-6 py-4 rounded-xl text-center text-base font-semibold bg-slate-800/80 hover:bg-slate-700 text-white border border-slate-700 transition-colors">
+                Explore Listings
+              </a>
+              
+              <a href="tel:+919479427773" class="px-5 py-4 rounded-xl text-center text-sm font-medium text-slate-300 hover:text-white transition-colors flex items-center justify-center gap-2">
+                <span>Call 094794 27773</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Hero Column: Founder Trust & Verified Reviews Showcase Card -->
+          <div class="lg:col-span-5">
+            <div class="relative bg-gradient-to-b from-[#111C35] to-[#0D162B] border border-amber-500/25 rounded-2xl p-6 sm:p-8 shadow-2xl">
+              
+              <!-- Top Card Header -->
+              <div class="flex items-center justify-between border-b border-slate-800 pb-5 mb-5">
+                <div>
+                  <span class="text-xs uppercase tracking-wider text-amber-400 font-semibold">Founder & Lead Broker</span>
+                  <h2 class="text-xl font-bold text-white mt-0.5">Pratik (AH Property)</h2>
+                  <p class="text-xs text-slate-400">Silicon City, Indore, MP</p>
+                </div>
+                <div class="text-right">
+                  <div class="inline-flex items-center gap-1 bg-amber-500/10 border border-amber-500/30 rounded-lg px-2.5 py-1 text-amber-400 font-bold text-sm">
+                    ★ 4.9 / 5
+                  </div>
+                  <div class="text-[11px] text-slate-400 mt-1">83 Verified Reviews</div>
+                </div>
+              </div>
+
+              <!-- Quote 1 (Real Review Quote) -->
+              <div class="bg-[#090F1E] rounded-xl p-4 border border-slate-800/80 relative mb-4">
+                <div class="text-amber-400 text-xs font-semibold mb-1 flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 fill-amber-400" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  Verified Buyer on Google
+                </div>
+                <blockquote class="text-sm text-slate-200 italic leading-relaxed">
+                  "Pratik ji is a very helpful and responsible broker. Even after the deal was closed, he continued to be the go-to person for everything — arranging an electrician, plumber, or cleaning services."
+                </blockquote>
+              </div>
+
+              <!-- Review Highlights Tags -->
+              <div class="space-y-2">
+                <div class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Reviewer Highlights:</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-slate-800/90 text-amber-300 text-xs px-2.5 py-1 rounded-md border border-slate-700">★ Helpful Team</span>
+                  <span class="bg-slate-800/90 text-amber-300 text-xs px-2.5 py-1 rounded-md border border-slate-700">★ Wide Range of Properties</span>
+                  <span class="bg-slate-800/90 text-amber-300 text-xs px-2.5 py-1 rounded-md border border-slate-700">★ Clear Communication</span>
+                  <span class="bg-slate-800/90 text-emerald-300 text-xs px-2.5 py-1 rounded-md border border-slate-700">★ After-Sale Handover Help</span>
+                </div>
+              </div>
+
+              <!-- Office Quick Connect Strip -->
+              <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                <span>📍 B62, Silicon City, Indore</span>
+                <span class="text-amber-400 font-medium">Open Daily • till 8:30 PM</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST METRICS STRIP -->
+    <section class="bg-[#0B1325] border-b border-slate-800 py-6 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          
+          <div class="border-r border-slate-800 last:border-0 p-2">
+            <div class="font-display text-2xl sm:text-3xl font-bold text-amber-400">4.9 / 5.0</div>
+            <div class="text-xs sm:text-sm text-slate-400 mt-1">83+ Google Reviews</div>
+          </div>
+
+          <div class="border-r border-slate-800 last:border-0 p-2">
+            <div class="font-display text-2xl sm:text-3xl font-bold text-white">100%</div>
+            <div class="text-xs sm:text-sm text-slate-400 mt-1">Verified Documentation</div>
+          </div>
+
+          <div class="border-r border-slate-800 last:border-0 p-2">
+            <div class="font-display text-2xl sm:text-3xl font-bold text-amber-400">Silicon City & Rau</div>
+            <div class="text-xs sm:text-sm text-slate-400 mt-1">Local Indore Specialists</div>
+          </div>
+
+          <div class="p-2">
+            <div class="font-display text-2xl sm:text-3xl font-bold text-emerald-400">End-to-End</div>
+            <div class="text-xs sm:text-sm text-slate-400 mt-1">Post-Purchase Utility Support</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROPERTIES SECTION -->
+    <section id="properties" class="py-16 sm:py-24 bg-[#F8FAFC]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-3 py-1 rounded-full">
+              Handpicked Indore Listings
+            </span>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mt-3">
+              Featured Properties in Silicon City & Nearby
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl">
+              Explore our current selection of verified flats, residential plots, independent row houses, and rentals. Direct consultation with Pratik.
+            </p>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="flex flex-wrap gap-2" id="filterTabs">
+            <button onclick="filterProperties('all')" class="filter-tab active px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold border border-slate-300 transition-colors">
+              All Properties (5)
+            </button>
+            <button onclick="filterProperties('flat')" class="filter-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 transition-colors">
+              Flats & Apts
+            </button>
+            <button onclick="filterProperties('plot')" class="filter-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 transition-colors">
+              Residential Plots
+            </button>
+            <button onclick="filterProperties('rental')" class="filter-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 transition-colors">
+              Rentals
+            </button>
+            <button onclick="filterProperties('commercial')" class="filter-tab px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold bg-white text-slate-700 border border-slate-300 hover:bg-slate-100 transition-colors">
+              Commercial
+            </button>
+          </div>
+        </div>
+
+        <!-- Property Grid (5 Curated Demo Listings) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="propertiesGrid">
+          
+          <!-- Listing 1: 3 BHK Modern Flat -->
+          <div class="property-card bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm flex flex-col" data-category="flat">
+            <div class="relative h-56 bg-slate-800 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="3 BHK Luxury Apartment in Silicon City Indore" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div class="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-md text-amber-300 text-xs font-bold px-3 py-1 rounded-md border border-amber-500/30">
+                FOR SALE
+              </div>
+              <div class="absolute top-3 right-3 bg-white/95 text-slate-900 text-xs font-semibold px-2.5 py-1 rounded-md shadow-sm">
+                Ref: AHP-FLT-101
+              </div>
+              <div class="absolute bottom-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-md flex items-center gap-1">
+                📍 Silicon City, Indore
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="font-bold text-lg text-slate-900">3 BHK Modern Flat (Gated Campus)</h3>
+                </div>
+                <p class="text-xs text-slate-500 line-clamp-2 mb-4">
+                  Spacious east-facing flat with modular kitchen, 2 balconies, covered parking, and 24/7 security near Silicon City main entrance.
+                </p>
+
+                <!-- Specs Badge -->
+                <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 text-xs text-slate-600 mb-4 text-center">
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-slate-900">1,450 sq.ft</span>
+                    <span>Built-up</span>
+                  </div>
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-slate-900">3 Beds / 3 Baths</span>
+                    <span>Layout</span>
+                  </div>
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-slate-900">Ready to Move</span>
+                    <span>Possession</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="pt-2 flex items-center justify-between gap-3">
+                <div>
+                  <div class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Demand Price</div>
+                  <div class="text-xl font-bold text-slate-900">₹ 58 Lakhs</div>
+                </div>
+                <a href="https://wa.me/919479427773?text=Hello%20Pratik%20ji,%20I%20am%20interested%20in%20the%203%20BHK%20Modern%20Flat%20in%20Silicon%20City%20(Ref:%20AHP-FLT-101).%20Please%20share%20details%20and%20arrange%20a%20visit." target="_blank" rel="noopener noreferrer" class="whatsapp-btn px-3.5 py-2 rounded-lg text-xs font-bold inline-flex items-center gap-1.5 shadow-sm">
+                  <span>Enquire</span>
+                  <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.838.79 2.796.79 3.184 0 5.77-2.587 5.77-5.766.001-3.182-2.585-5.766-5.77-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.802 0-3.486-.481-4.945-1.319l-5.055 1.383 1.396-5.027c-.908-1.527-1.396-3.272-1.396-5.037 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Listing 2: Prime Residential Plot -->
+          <div class="property-card bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm flex flex-col" data-category="plot">
+            <div class="relative h-56 bg-slate-800 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Prime Residential Plot in Silicon City Indore" class="w-full h-full object-cover" />
+              <div class="absolute top-3 left-3 bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-md">
+                PRIME PLOT
+              </div>
+              <div class="absolute top-3 right-3 bg-white/95 text-slate-900 text-xs font-semibold px-2.5 py-1 rounded-md shadow-sm">
+                Ref: AHP-PLT-204
+              </div>
+              <div class="absolute bottom-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-md flex items-center gap-1">
+                📍 Silicon City Main Sector, Indore
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="font-bold text-lg text-slate-900">Residential Plot (20x50 East Facing)</h3>
+                </div>
+                <p class="text-xs text-slate-500 line-clamp-2 mb-4">
+                  100% clear title, T&CP & RERA compliant residential plot on a wide 30-ft road. Ideal for immediate home construction or long-term appreciation.
+                </p>
+
+                <!-- Specs Badge -->
+                <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 text-xs text-slate-600 mb-4 text-center">
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-slate-900">1,000 sq.ft</span>
+                    <span>Dimension 20x50</span>
+                  </div>
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-slate-900">East Facing</span>
+                    <span>Vastu Perfect</span>
+                  </div>
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-emerald-600">Clear Title</span>
+                    <span>Registry Ready</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="pt-2 flex items-center justify-between gap-3">
+                <div>
+                  <div class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Demand Price</div>
+                  <div class="text-xl font-bold text-slate-900">₹ 42 Lakhs</div>
+                </div>
+                <a href="https://wa.me/919479427773?text=Hello%20Pratik%20ji,%20I%20am%20interested%20in%20the%201000%20sq.ft%20Plot%20in%20Silicon%20City%20(Ref:%20AHP-PLT-204).%20Please%20share%20exact%20location%20and%20registry%20details." target="_blank" rel="noopener noreferrer" class="whatsapp-btn px-3.5 py-2 rounded-lg text-xs font-bold inline-flex items-center gap-1.5 shadow-sm">
+                  <span>Enquire</span>
+                  <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.838.79 2.796.79 3.184 0 5.77-2.587 5.77-5.766.001-3.182-2.585-5.766-5.77-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.802 0-3.486-.481-4.945-1.319l-5.055 1.383 1.396-5.027c-.908-1.527-1.396-3.272-1.396-5.037 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Listing 3: Ready-to-Move 2 BHK Sunlit Flat -->
+          <div class="property-card bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm flex flex-col" data-category="flat">
+            <div class="relative h-56 bg-slate-800 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="2 BHK Apartment Rau Silicon City Corridor Indore" class="w-full h-full object-cover" />
+              <div class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-md">
+                READY TO MOVE
+              </div>
+              <div class="absolute top-3 right-3 bg-white/95 text-slate-900 text-xs font-semibold px-2.5 py-1 rounded-md shadow-sm">
+                Ref: AHP-FLT-105
+              </div>
+              <div class="absolute bottom-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-md flex items-center gap-1">
+                📍 Rau / Silicon City Vicinity, Indore
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="font-bold text-lg text-slate-900">2 BHK Sunlit Semi-Furnished Flat</h3>
+                </div>
+                <p class="text-xs text-slate-500 line-clamp-2 mb-4">
+                  Well-ventilated corner unit with lift, power backup, covered parking, and water supply. Walking distance to schools & markets.
+                </p>
+
+                <!-- Specs Badge -->
+                <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 text-xs text-slate-600 mb-4 text-center">
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-slate-900">1,050 sq.ft</span>
+                    <span>Super Area</span>
+                  </div>
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-slate-900">2 Beds / 2 Baths</span>
+                    <span>Semi-Furnished</span>
+                  </div>
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-slate-900">Bank Loan</span>
+                    <span>Approved</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="pt-2 flex items-center justify-between gap-3">
+                <div>
+                  <div class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Demand Price</div>
+                  <div class="text-xl font-bold text-slate-900">₹ 38.5 Lakhs</div>
+                </div>
+                <a href="https://wa.me/919479427773?text=Hello%20Pratik%20ji,%20I%20am%20interested%20in%20the%202%20BHK%20Semi-Furnished%20Flat%20(Ref:%20AHP-FLT-105).%20Please%20share%20site%20visit%20timings." target="_blank" rel="noopener noreferrer" class="whatsapp-btn px-3.5 py-2 rounded-lg text-xs font-bold inline-flex items-center gap-1.5 shadow-sm">
+                  <span>Enquire</span>
+                  <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.838.79 2.796.79 3.184 0 5.77-2.587 5.77-5.766.001-3.182-2.585-5.766-5.77-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.802 0-3.486-.481-4.945-1.319l-5.055 1.383 1.396-5.027c-.908-1.527-1.396-3.272-1.396-5.037 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Listing 4: 3 BHK Independent Rental Villa / Row House -->
+          <div class="property-card bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm flex flex-col" data-category="rental">
+            <div class="relative h-56 bg-slate-800 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Independent Row House Rental Silicon City Indore" class="w-full h-full object-cover" />
+              <div class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-md">
+                FOR RENT
+              </div>
+              <div class="absolute top-3 right-3 bg-white/95 text-slate-900 text-xs font-semibold px-2.5 py-1 rounded-md shadow-sm">
+                Ref: AHP-RNT-302
+              </div>
+              <div class="absolute bottom-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-md flex items-center gap-1">
+                📍 Silicon City, Indore
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="font-bold text-lg text-slate-900">3 BHK Independent Row House (Rental)</h3>
+                </div>
+                <p class="text-xs text-slate-500 line-clamp-2 mb-4">
+                  Beautiful duplex row house with private car porch, modular kitchen, terrace, and peaceful residential environment. Family preferred.
+                </p>
+
+                <!-- Specs Badge -->
+                <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 text-xs text-slate-600 mb-4 text-center">
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-slate-900">1,600 sq.ft</span>
+                    <span>Duplex Villa</span>
+                  </div>
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-slate-900">3 BHK + Porch</span>
+                    <span>Private Space</span>
+                  </div>
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-slate-900">Immediate</span>
+                    <span>Move-In Ready</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="pt-2 flex items-center justify-between gap-3">
+                <div>
+                  <div class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Monthly Rent</div>
+                  <div class="text-xl font-bold text-emerald-700">₹ 22,000 <span class="text-xs font-normal text-slate-500">/ mo</span></div>
+                </div>
+                <a href="https://wa.me/919479427773?text=Hello%20Pratik%20ji,%20I%20want%20to%20rent%20the%203%20BHK%20Row%20House%20in%20Silicon%20City%20(Ref:%20AHP-RNT-302).%20Please%20let%20me%20know%20availability." target="_blank" rel="noopener noreferrer" class="whatsapp-btn px-3.5 py-2 rounded-lg text-xs font-bold inline-flex items-center gap-1.5 shadow-sm">
+                  <span>Enquire</span>
+                  <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.838.79 2.796.79 3.184 0 5.77-2.587 5.77-5.766.001-3.182-2.585-5.766-5.77-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.802 0-3.486-.481-4.945-1.319l-5.055 1.383 1.396-5.027c-.908-1.527-1.396-3.272-1.396-5.037 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Listing 5: Commercial Shop / Investment Space -->
+          <div class="property-card bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm flex flex-col" data-category="commercial">
+            <div class="relative h-56 bg-slate-800 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Commercial Shop Space Silicon City Junction Indore" class="w-full h-full object-cover" />
+              <div class="absolute top-3 left-3 bg-purple-700 text-white text-xs font-bold px-3 py-1 rounded-md">
+                COMMERCIAL
+              </div>
+              <div class="absolute top-3 right-3 bg-white/95 text-slate-900 text-xs font-semibold px-2.5 py-1 rounded-md shadow-sm">
+                Ref: AHP-COM-401
+              </div>
+              <div class="absolute bottom-3 left-3 bg-slate-900/80 backdrop-blur-md text-white text-xs px-2.5 py-1 rounded-md flex items-center gap-1">
+                📍 AB Road / Silicon City Junction, Indore
+              </div>
+            </div>
+
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-baseline justify-between mb-2">
+                  <h3 class="font-bold text-lg text-slate-900">Ground Floor Commercial Shop / Office</h3>
+                </div>
+                <p class="text-xs text-slate-500 line-clamp-2 mb-4">
+                  High-footfall commercial shop suitable for clinic, retail store, pharmacy, or professional office. High rental yield potential.
+                </p>
+
+                <!-- Specs Badge -->
+                <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 text-xs text-slate-600 mb-4 text-center">
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-slate-900">450 sq.ft</span>
+                    <span>Carpet Area</span>
+                  </div>
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-slate-900">Main Road</span>
+                    <span>Ground Floor</span>
+                  </div>
+                  <div class="bg-slate-50 rounded py-1">
+                    <span class="font-bold block text-emerald-600">High ROI</span>
+                    <span>Ready Setup</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="pt-2 flex items-center justify-between gap-3">
+                <div>
+                  <div class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Demand Price</div>
+                  <div class="text-xl font-bold text-slate-900">₹ 34 Lakhs</div>
+                </div>
+                <a href="https://wa.me/919479427773?text=Hello%20Pratik%20ji,%20I%20am%20interested%20in%20the%20Commercial%20Shop%20(Ref:%20AHP-COM-401).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" class="whatsapp-btn px-3.5 py-2 rounded-lg text-xs font-bold inline-flex items-center gap-1.5 shadow-sm">
+                  <span>Enquire</span>
+                  <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.838.79 2.796.79 3.184 0 5.77-2.587 5.77-5.766.001-3.182-2.585-5.766-5.77-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.802 0-3.486-.481-4.945-1.319l-5.055 1.383 1.396-5.027c-.908-1.527-1.396-3.272-1.396-5.037 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Custom Request Banner -->
+        <div class="mt-12 bg-gradient-to-r from-[#0B1325] to-[#1E2D4E] rounded-2xl p-6 sm:p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold font-display">Need a specific budget, plot dimension, or custom locality in Indore?</h3>
+            <p class="text-slate-300 text-sm mt-1">Pratik maintains an extensive unlisted inventory across Silicon City, Rau, AB Road, and Super Corridor.</p>
+          </div>
+          <a href="https://wa.me/919479427773?text=Hello%20Pratik%20ji,%20I%20have%20a%20custom%20property%20requirement%20in%20Indore.%20My%20budget%20is%20..." target="_blank" rel="noopener noreferrer" class="gold-btn px-6 py-3.5 rounded-xl text-sm font-bold whitespace-nowrap shadow-lg">
+            Share Your Requirement
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION: BUILT PERSONALLY AROUND PRATIK -->
+    <section id="about" class="py-16 sm:py-24 bg-white border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Visual / Founder Trust Badge Box -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="bg-[#0B1325] text-white rounded-2xl p-8 border border-amber-500/30 relative overflow-hidden shadow-xl">
+              <div class="w-16 h-16 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center font-serif text-2xl font-bold text-slate-950 mb-6">
+                P
+              </div>
+
+              <div class="text-amber-400 text-xs font-bold uppercase tracking-wider">The Founder's Commitment</div>
+              <h3 class="text-2xl font-bold text-white mt-1">Pratik (आह प्रॉपर्टी)</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+                "Real estate in Indore is not just about transactions; it's about helping families plant their roots securely. When you deal with AH Property, you have my personal assurance of honesty, clarity, and ongoing support long after the registry is signed."
+              </p>
+
+              <div class="mt-6 pt-6 border-t border-slate-800 flex items-center justify-between text-xs">
+                <div>
+                  <div class="text-amber-300 font-bold text-base">83 Reviews</div>
+                  <div class="text-slate-400">4.9 Star Rating</div>
+                </div>
+                <div>
+                  <div class="text-white font-bold text-base">Office B62</div>
+                  <div class="text-slate-400">Silicon City, Indore</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Inclusive Badge Card -->
+            <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 shrink-0">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-slate-900">Welcoming & LGBTQ+ Friendly Space</h4>
+                <p class="text-xs text-slate-500">A safe, respectful, and transparent property consultation experience for everyone.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content: The Pratik Difference & Values -->
+          <div class="lg:col-span-7 space-y-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-3 py-1 rounded-full">
+                Personal, Founder-Led Brokerage
+              </span>
+              <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mt-3">
+                Why Indore Families & Investors Choose Pratik at AH Property
+              </h2>
+            </div>
+
+            <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+              Unlike generic corporate agencies where clients get passed between junior representatives, at <strong>AH Property</strong>, every consultation, negotiation, and legal verification is personally handled by <strong>Pratik</strong>. 
+            </p>
+
+            <div class="space-y-4 pt-2">
+              
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center font-bold shrink-0 mt-0.5">
+                  1
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900 text-base">Honest & Responsive Communication</h3>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    No deceptive pricing, no aggressive sales pressure. Every question on registry, road widths, water supply, and society bylaws is answered clearly and promptly.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center font-bold shrink-0 mt-0.5">
+                  2
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900 text-base">Curated Wide Range of Properties</h3>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    From budget-friendly 2 BHK flats and luxury 3 BHK homes to residential plots ready for registry and vetted rental properties across Silicon City and Rau.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-700 flex items-center justify-center font-bold shrink-0 mt-0.5">
+                  3
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900 text-base">Standout After-Sale Service Style (Our Core Differentiator)</h3>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                    Most brokers disappear after taking their commission. Pratik remains your go-to partner: arranging verified electricians, reliable plumbers, deep cleaning services, painters, and lock-smiths so moving in is completely stress-free.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="pt-4">
+              <a href="tel:+919479427773" class="inline-flex items-center gap-2 bg-[#0B1325] text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-slate-800 transition-colors">
+                <span>Talk to Pratik Ji Directly</span>
+                <span>📞 094794 27773</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- UNIQUE AFTER-SALE & POST-DEAL SUPPORT SPOTLIGHT -->
+    <section id="after-sale" class="py-16 sm:py-20 bg-[#0B1325] text-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3.5 py-1 rounded-full">
+            The Standout Differentiator
+          </span>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold font-display mt-3">
+            Our Signature After-Sale Support
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base mt-2">
+            "Even after the deal was closed, he continued to be the go-to person for everything." Here is how Pratik stays with you throughout your ownership journey:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="bg-[#111C35] p-6 rounded-2xl border border-slate-800 text-center hover:border-amber-500/40 transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mx-auto mb-4 text-2xl">
+              ⚡
+            </div>
+            <h3 class="font-bold text-base text-white">Electrician Referrals</h3>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+              Trusted, vetted electrical technicians for meter setups, light installations, inverter wiring, and appliance connections.
+            </p>
+          </div>
+
+          <div class="bg-[#111C35] p-6 rounded-2xl border border-slate-800 text-center hover:border-amber-500/40 transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mx-auto mb-4 text-2xl">
+              🚰
+            </div>
+            <h3 class="font-bold text-base text-white">Plumber & Sanitation</h3>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+              Reliable plumbing assistance for water purifier fittings, geyser installation, bathroom fixtures, and tank checks.
+            </p>
+          </div>
+
+          <div class="bg-[#111C35] p-6 rounded-2xl border border-slate-800 text-center hover:border-amber-500/40 transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mx-auto mb-4 text-2xl">
+              ✨
+            </div>
+            <h3 class="font-bold text-base text-white">Deep Cleaning & Whitewash</h3>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+              Thorough move-in deep cleaning, polish work, pest control, and fresh paint arrangements before your family steps in.
+            </p>
+          </div>
+
+          <div class="bg-[#111C35] p-6 rounded-2xl border border-slate-800 text-center hover:border-amber-500/40 transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mx-auto mb-4 text-2xl">
+              📑
+            </div>
+            <h3 class="font-bold text-base text-white">Mutation & Utility Name Change</h3>
+            <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+              Guidance for Indore Municipal Corporation (IMC) property tax mutation and electricity meter name transfer.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="mt-10 text-center">
+          <p class="text-xs text-slate-400 italic">
+            *Utility & maintenance referrals are provided as a goodwill service exclusively to AH Property clients.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CORE SERVICES SECTION -->
+    <section id="services" class="py-16 sm:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-3 py-1 rounded-full">
+            What We Do
+          </span>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mt-3">
+            Comprehensive Real Estate Services in Indore
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-2">
+            Professional end-to-end guidance tailored to buyers, sellers, landlords, and long-term investors.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Service 1 -->
+          <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-lg transition-all">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center text-xl font-bold mb-4">
+              🏡
+            </div>
+            <h3 class="font-bold text-lg text-slate-900">Property Sale & Purchase</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              Assisting home buyers and sellers in Silicon City, Rau, and Indore with premium 1, 2, 3, and 4 BHK flats, row houses, and bungalows.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-lg transition-all">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center text-xl font-bold mb-4">
+              📐
+            </div>
+            <h3 class="font-bold text-lg text-slate-900">Residential & Commercial Plots</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              Prime plotting deals with strict legal due diligence, title verification, colony layout approvals, and demarcation inspection.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-lg transition-all">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center text-xl font-bold mb-4">
+              🔑
+            </div>
+            <h3 class="font-bold text-lg text-slate-900">Rental & Tenancy Management</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              Connecting respectable families and working professionals with verified landlords. Complete rental agreement and police verification support.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-lg transition-all">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center text-xl font-bold mb-4">
+              ⚖️
+            </div>
+            <h3 class="font-bold text-lg text-slate-900">Clear Title & Registry Assistance</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              Step-by-step guidance through sub-registrar office processes, stamp duty calculations, registry appointments, and documentation.
+            </p>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-lg transition-all">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center text-xl font-bold mb-4">
+              🏦
+            </div>
+            <h3 class="font-bold text-lg text-slate-900">Home Loan Coordination</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              Liaisoning with nationalized and leading private banks (SBI, HDFC, ICICI, etc.) for smooth loan sanctioning at competitive rates.
+            </p>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-white hover:shadow-lg transition-all">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-700 flex items-center justify-center text-xl font-bold mb-4">
+              🤝
+            </div>
+            <h3 class="font-bold text-lg text-slate-900">Post-Handover Utility Referral</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              Continuous support with trusted electrician, plumber, painting, and cleaning contractor contacts for effortless moving in.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- REAL CLIENT REVIEWS SECTION (83 GOOGLE REVIEWS & 4.9 RATING) -->
+    <section id="reviews" class="py-16 sm:py-24 bg-[#070D18] text-white border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 bg-[#111C35] border border-amber-500/30 rounded-full px-4 py-1.5 text-xs text-amber-400 font-bold mb-3">
+            <span>★★★★★</span>
+            <span>4.9 / 5.0 Rating</span>
+            <span class="text-slate-400 font-normal">• 83 Google Reviews</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold font-display">
+            What Our Clients Say About Pratik & AH Property
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base mt-2">
+            Real feedback from home buyers, plot owners, and tenants who found their ideal properties with us.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Review 1 -->
+          <div class="bg-[#0B1325] p-6 rounded-2xl border border-slate-800 relative flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex text-amber-400 text-sm">★★★★★</div>
+                <span class="text-[11px] text-slate-400">Google Review</span>
+              </div>
+              <blockquote class="text-sm text-slate-200 italic leading-relaxed">
+                "Had a great experience working with this property broker. Professional, honest, and very responsive throughout the process. Helped me find the right property without any hassle."
+              </blockquote>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-slate-800 text-amber-400 font-bold flex items-center justify-center text-xs">
+                VR
+              </div>
+              <div>
+                <div class="text-xs font-bold text-white">Verified Client</div>
+                <div class="text-[11px] text-slate-400">Silicon City Property Buyer</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 (Key highlight on Pratik's after-deal support) -->
+          <div class="bg-[#111C35] p-6 rounded-2xl border border-amber-500/30 relative flex flex-col justify-between shadow-lg">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex text-amber-400 text-sm">★★★★★</div>
+                <span class="text-[11px] text-amber-300 font-medium">Highlight Review</span>
+              </div>
+              <blockquote class="text-sm text-slate-100 italic leading-relaxed font-normal">
+                "Pratik ji is a very helpful and responsible broker. Even after the deal was closed, he continued to be the go-to person for everything — arranging an electrician, plumber, or cleaning services."
+              </blockquote>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-700/80 flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center text-xs">
+                PJ
+              </div>
+              <div>
+                <div class="text-xs font-bold text-white">Indore Home Owner</div>
+                <div class="text-[11px] text-amber-300/80">Silicon City Resident</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-[#0B1325] p-6 rounded-2xl border border-slate-800 relative flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex text-amber-400 text-sm">★★★★★</div>
+                <span class="text-[11px] text-slate-400">Google Review</span>
+              </div>
+              <blockquote class="text-sm text-slate-200 italic leading-relaxed">
+                "Amazing service, outstanding communication. The team has a wide range of properties and provided clear, honest details right from day one."
+              </blockquote>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-slate-800 text-amber-400 font-bold flex items-center justify-center text-xs">
+                AK
+              </div>
+              <div>
+                <div class="text-xs font-bold text-white">Indore Investor</div>
+                <div class="text-[11px] text-slate-400">Plot & Flat Client</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Google Reviews Action Link -->
+        <div class="mt-10 text-center">
+          <a href="https://maps.google.com/?q=AH+Property+B62+Silicon+City+Indore" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs sm:text-sm text-slate-300 hover:text-amber-400 transition-colors">
+            <span>📍 See AH Property on Google Maps (B62, Silicon City, Indore)</span>
+            <span>↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOCALITIES COVERED SECTION (INDORE FOCUS) -->
+    <section id="localities" class="py-16 sm:py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <div class="lg:col-span-6 space-y-5">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-3 py-1 rounded-full">
+              Indore Real Estate Coverage
+            </span>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900">
+              Prime Indore Localities We Specialize In
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              With our main office located at <strong>B62, Silicon City</strong>, we provide hyperlocal market intelligence and rapid site visits across South & West Indore and major growth corridors.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              
+              <div class="bg-white p-3.5 rounded-xl border border-slate-200">
+                <div class="font-bold text-sm text-slate-900">📍 Silicon City (Primary Hub)</div>
+                <div class="text-xs text-slate-500 mt-0.5">Flats, Row Houses, Plots & Rentals</div>
+              </div>
+
+              <div class="bg-white p-3.5 rounded-xl border border-slate-200">
+                <div class="font-bold text-sm text-slate-900">📍 Rau & AB Road Corridor</div>
+                <div class="text-xs text-slate-500 mt-0.5">High appreciation townships</div>
+              </div>
+
+              <div class="bg-white p-3.5 rounded-xl border border-slate-200">
+                <div class="font-bold text-sm text-slate-900">📍 Super Corridor & Airport Area</div>
+                <div class="text-xs text-slate-500 mt-0.5">IT park & investment plotting</div>
+              </div>
+
+              <div class="bg-white p-3.5 rounded-xl border border-slate-200">
+                <div class="font-bold text-sm text-slate-900">📍 AB Bypass & Tejaji Nagar</div>
+                <div class="text-xs text-slate-500 mt-0.5">Gated villas & residential plots</div>
+              </div>
+
+              <div class="bg-white p-3.5 rounded-xl border border-slate-200">
+                <div class="font-bold text-sm text-slate-900">📍 Nipania & Vijay Nagar</div>
+                <div class="text-xs text-slate-500 mt-0.5">Premium apartments & commercial</div>
+              </div>
+
+              <div class="bg-white p-3.5 rounded-xl border border-slate-200">
+                <div class="font-bold text-sm text-slate-900">📍 Mahalakshmi Nagar / Scheme 78</div>
+                <div class="text-xs text-slate-500 mt-0.5">Family living & rental inventory</div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Office Location Card -->
+          <div class="lg:col-span-6">
+            <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-5">
+                <div>
+                  <div class="text-xs text-amber-700 font-bold uppercase tracking-wide">Consultation Office</div>
+                  <h3 class="text-xl font-bold text-slate-900">AH Property (आह प्रॉपर्टी)</h3>
+                </div>
+                <span class="bg-emerald-50 text-emerald-700 text-xs px-2.5 py-1 rounded-full font-semibold border border-emerald-200">
+                  Open Daily till 8:30 PM
+                </span>
+              </div>
+
+              <div class="space-y-3.5 text-sm text-slate-600">
+                <div class="flex items-start gap-3">
+                  <span class="text-lg">📍</span>
+                  <div>
+                    <strong class="text-slate-900 block font-semibold">Address:</strong>
+                    <span>B62, Silicon City, Indore, Madhya Pradesh 452012</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span class="text-lg">📞</span>
+                  <div>
+                    <strong class="text-slate-900 block font-semibold">Direct Phone / WhatsApp:</strong>
+                    <a href="tel:+919479427773" class="text-slate-900 font-bold hover:underline">094794 27773</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span class="text-lg">⏰</span>
+                  <div>
+                    <strong class="text-slate-900 block font-semibold">Operating Hours:</strong>
+                    <span>Monday – Sunday: 9:00 AM – 8:30 PM</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6 pt-5 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
+                <a href="https://wa.me/919479427773?text=Hello%20Pratik%20ji,%20I%20would%20like%20to%20visit%20your%20office%20at%20B62%20Silicon%20City." target="_blank" rel="noopener noreferrer" class="whatsapp-btn px-4 py-2.5 rounded-xl text-xs font-bold text-center flex-1 inline-flex items-center justify-center gap-2">
+                  <span>Schedule Office Visit</span>
+                </a>
+                <a href="tel:+919479427773" class="bg-slate-900 text-white px-4 py-2.5 rounded-xl text-xs font-semibold text-center flex-1 hover:bg-slate-800 transition-colors">
+                  Call Now: 094794 27773
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE EMI CALCULATOR -->
+    <section id="calculator" class="py-16 sm:py-20 bg-white border-t border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-3 py-1 rounded-full">
+            Buyer Financial Planning
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-3">
+            Quick Home Loan EMI Calculator
+          </h2>
+          <p class="text-slate-600 text-sm mt-1">
+            Estimate your monthly installments for Indore property purchases.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            
+            <!-- Sliders -->
+            <div class="space-y-5">
+              
+              <div>
+                <div class="flex justify-between text-xs font-bold text-slate-700 mb-1.5">
+                  <span>Property Loan Amount</span>
+                  <span class="text-amber-700 text-sm" id="loanAmountDisplay">₹ 40 Lakhs</span>
+                </div>
+                <input type="range" id="loanAmount" min="500000" max="15000000" step="100000" value="4000000" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-amber-600" oninput="calculateEMI()" />
+                <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+                  <span>₹ 5 Lakhs</span>
+                  <span>₹ 1.5 Cr</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-bold text-slate-700 mb-1.5">
+                  <span>Interest Rate (% per annum)</span>
+                  <span class="text-amber-700 text-sm" id="interestRateDisplay">8.5%</span>
+                </div>
+                <input type="range" id="interestRate" min="6.5" max="14.0" step="0.1" value="8.5" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-amber-600" oninput="calculateEMI()" />
+                <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+                  <span>6.5%</span>
+                  <span>14.0%</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-bold text-slate-700 mb-1.5">
+                  <span>Loan Tenure (Years)</span>
+                  <span class="text-amber-700 text-sm" id="tenureYearsDisplay">20 Years</span>
+                </div>
+                <input type="range" id="tenureYears" min="5" max="30" step="1" value="20" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-amber-600" oninput="calculateEMI()" />
+                <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+                  <span>5 Yrs</span>
+                  <span>30 Yrs</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Output Card -->
+            <div class="bg-[#0B1325] text-white p-6 rounded-xl border border-slate-800 text-center">
+              <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Estimated Monthly EMI</span>
+              <div class="text-3xl sm:text-4xl font-bold text-amber-400 mt-1 font-display" id="emiResult">
+                ₹ 34,713
+              </div>
+              <div class="text-[11px] text-slate-400 mt-1">per month</div>
+
+              <div class="grid grid-cols-2 gap-3 mt-6 pt-6 border-t border-slate-800 text-left text-xs">
+                <div>
+                  <span class="text-slate-400 block">Total Interest:</span>
+                  <strong class="text-white font-semibold" id="totalInterestResult">₹ 43,31,102</strong>
+                </div>
+                <div>
+                  <span class="text-slate-400 block">Total Payment:</span>
+                  <strong class="text-white font-semibold" id="totalPaymentResult">₹ 83,31,102</strong>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <a href="https://wa.me/919479427773?text=Hello%20Pratik%20ji,%20I%20need%20bank%20loan%20assistance%20for%20an%20Indore%20property." target="_blank" rel="noopener noreferrer" class="gold-btn w-full py-2.5 rounded-lg text-xs font-bold block text-center">
+                  Get Home Loan Assistance
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT / QUICK CONSULTATION FORM SECTION -->
+    <section id="contact" class="py-16 sm:py-24 bg-[#070D18] text-white border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Info -->
+          <div class="lg:col-span-5 space-y-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full">
+                Get In Touch
+              </span>
+              <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold font-display mt-3">
+                Let's Discuss Your Indore Property Goals
+              </h2>
+              <p class="text-slate-300 text-sm mt-2">
+                Whether you want to buy your dream flat, invest in a clear-title plot, or rent a home in Silicon City, Pratik is just a message or call away.
+              </p>
+            </div>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-[#111C35] text-amber-400 flex items-center justify-center font-bold text-lg">📞</div>
+                <div>
+                  <div class="text-xs text-slate-400">Call / WhatsApp:</div>
+                  <a href="tel:+919479427773" class="text-white font-bold hover:text-amber-400 text-base">094794 27773</a>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-[#111C35] text-amber-400 flex items-center justify-center font-bold text-lg">📍</div>
+                <div>
+                  <div class="text-xs text-slate-400">Office Location:</div>
+                  <div class="text-white font-medium text-sm">B62, Silicon City, Indore, MP 452012</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-[#111C35] text-amber-400 flex items-center justify-center font-bold text-lg">⏰</div>
+                <div>
+                  <div class="text-xs text-slate-400">Business Hours:</div>
+                  <div class="text-white font-medium text-sm">Open Daily (Closes 8:30 PM)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact / Enquiry Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-[#0B1325] border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl">
+              <h3 class="text-lg font-bold text-white mb-4">Send a Direct Enquiry to Pratik</h3>
+              
+              <form id="enquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="userName" class="block text-xs font-semibold text-slate-300 mb-1">Your Name *</label>
+                    <input type="text" id="userName" required placeholder="e.g. Rahul Sharma" class="w-full bg-[#111C35] border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400" />
+                  </div>
+                  <div>
+                    <label for="userPhone" class="block text-xs font-semibold text-slate-300 mb-1">Mobile / WhatsApp No. *</label>
+                    <input type="tel" id="userPhone" required placeholder="e.g. 9876543210" class="w-full bg-[#111C35] border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="propertyType" class="block text-xs font-semibold text-slate-300 mb-1">Interested In</label>
+                    <select id="propertyType" class="w-full bg-[#111C35] border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400">
+                      <option value="Buy Flat / Apartment">Buy Flat / Apartment</option>
+                      <option value="Buy Residential Plot">Buy Residential Plot</option>
+                      <option value="Rental Property">Rental Property</option>
+                      <option value="Commercial Space">Commercial Space</option>
+                      <option value="Sell My Property">Sell My Property in Indore</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="budgetRange" class="block text-xs font-semibold text-slate-300 mb-1">Budget Range</label>
+                    <select id="budgetRange" class="w-full bg-[#111C35] border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400">
+                      <option value="Under ₹ 35 Lakhs">Under ₹ 35 Lakhs</option>
+                      <option value="₹ 35 - 55 Lakhs">₹ 35 - 55 Lakhs</option>
+                      <option value="₹ 55 - 85 Lakhs">₹ 55 - 85 Lakhs</option>
+                      <option value="₹ 85 Lakhs - ₹ 1.5 Cr+">₹ 85 Lakhs - ₹ 1.5 Cr+</option>
+                      <option value="Rental (₹ 10k - 30k/mo)">Rental (₹ 10k - 30k/mo)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="userMessage" class="block text-xs font-semibold text-slate-300 mb-1">Message or Specific Location in Indore</label>
+                  <textarea id="userMessage" rows="3" placeholder="Tell Pratik your preferred colony, BHK size, or any specific questions..." class="w-full bg-[#111C35] border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-400"></textarea>
+                </div>
+
+                <div class="pt-2 flex items-center gap-3">
+                  <button type="submit" class="gold-btn flex-1 py-3 rounded-xl text-sm font-bold flex items-center justify-center gap-2">
+                    <span>Send via WhatsApp</span>
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.838.79 2.796.79 3.184 0 5.77-2.587 5.77-5.766.001-3.182-2.585-5.766-5.77-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.802 0-3.486-.481-4.945-1.319l-5.055 1.383 1.396-5.027c-.908-1.527-1.396-3.272-1.396-5.037 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+                  </button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#050912] text-slate-400 text-xs py-12 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-800">
+          
+          <div class="space-y-3 md:col-span-2">
+            <div class="font-display text-lg font-bold text-white flex items-center gap-2">
+              AH PROPERTY
+              <span class="text-xs font-normal text-amber-400 font-sans">(आह प्रॉपर्टी)</span>
+            </div>
+            <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+              Real Estate Consultant in Silicon City, Indore. Built on trust, transparent documentation, wide inventory, and dedicated post-deal utility support.
+            </p>
+            <div class="text-xs text-slate-300">
+              Founder & Broker: <strong>Pratik</strong> • 📞 094794 27773
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">Quick Navigation</h4>
+            <ul class="space-y-2 text-xs">
+              <li><a href="#properties" class="hover:text-amber-400">Featured Properties</a></li>
+              <li><a href="#about" class="hover:text-amber-400">About Pratik</a></li>
+              <li><a href="#after-sale" class="hover:text-amber-400">After-Sale Utility Help</a></li>
+              <li><a href="#reviews" class="hover:text-amber-400">83 Google Reviews (4.9★)</a></li>
+              <li><a href="#calculator" class="hover:text-amber-400">EMI Calculator</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">Office & Hours</h4>
+            <p class="text-xs text-slate-300 mb-2">B62, Silicon City, Indore, MP 452012</p>
+            <p class="text-xs text-emerald-400 mb-2">Open Daily • 9:00 AM – 8:30 PM</p>
+            <p class="text-[11px] text-slate-500">LGBTQ+ Friendly • Verified Consultant</p>
+          </div>
+
+        </div>
+
+        <div class="pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-[11px] text-slate-500">
+          <div>
+            © 2026 AH Property (आह प्रॉपर्टी). All Rights Reserved.
+          </div>
+          <div>
+            Designed for Netlify & Modern Web • Single File Static Architecture
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (DESKTOP & MOBILE) -->
+    <a href="https://wa.me/919479427773?text=Hello%20Pratik%20ji,%20I%20am%20interested%20in%20property%20consultation%20with%20AH%20Property." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp with Pratik" class="fixed bottom-20 sm:bottom-6 right-6 z-50 w-14 h-14 rounded-full whatsapp-btn flex items-center justify-center shadow-2xl pulse-glow hover:scale-110 transition-transform">
+      <svg class="w-7 h-7 fill-white" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.838.79 2.796.79 3.184 0 5.77-2.587 5.77-5.766.001-3.182-2.585-5.766-5.77-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.802 0-3.486-.481-4.945-1.319l-5.055 1.383 1.396-5.027c-.908-1.527-1.396-3.272-1.396-5.037 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+    </a>
+
+    <!-- STICKY MOBILE CALL & WHATSAPP ACTION BAR (BOTTOM SCREEN ON MOBILE) -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#070D18]/95 backdrop-blur-md border-t border-slate-800 p-2.5 flex items-center gap-2 shadow-2xl">
+      <a href="tel:+919479427773" class="flex-1 py-3 px-3 rounded-xl bg-slate-800 text-white font-bold text-xs flex items-center justify-center gap-2 border border-slate-700 active:scale-95 transition-transform">
+        <span>📞 Call Pratik</span>
+      </a>
+      <a href="https://wa.me/919479427773?text=Hello%20Pratik%20ji,%20I%20am%20enquiring%20about%20properties%20in%20Silicon%20City%20Indore." target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-3 rounded-xl whatsapp-btn text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-transform">
+        <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 1.838.79 2.796.79 3.184 0 5.77-2.587 5.77-5.766.001-3.182-2.585-5.766-5.77-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.802 0-3.486-.481-4.945-1.319l-5.055 1.383 1.396-5.027c-.908-1.527-1.396-3.272-1.396-5.037 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+
+    <!-- VANILLA JS SCRIPTS (ZERO DEPENDENCIES) -->
+    <script>
+      // 1. Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+      const closeIcon = document.getElementById('closeIcon');
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            menuIcon.classList.add('hidden');
+            closeIcon.classList.remove('hidden');
+          } else {
+            mobileMenu.classList.add('hidden');
+            menuIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+          }
+        });
+
+        // Close on nav link click
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            menuIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+          });
+        });
+      }
+
+      // 2. Property Filter Tabs
+      function filterProperties(category) {
+        const cards = document.querySelectorAll('.property-card');
+        const buttons = document.querySelectorAll('.filter-tab');
+
+        buttons.forEach(btn => {
+          btn.classList.remove('active', 'bg-[#0B1325]', 'text-white', 'border-[#0B1325]');
+          btn.classList.add('bg-white', 'text-slate-700', 'border-slate-300');
+        });
+
+        const activeBtn = event.currentTarget;
+        if (activeBtn) {
+          activeBtn.classList.remove('bg-white', 'text-slate-700', 'border-slate-300');
+          activeBtn.classList.add('active', 'bg-[#0B1325]', 'text-white', 'border-[#0B1325]');
+        }
+
+        cards.forEach(card => {
+          if (category === 'all' || card.dataset.category === category) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      // 3. EMI Calculator Function
+      function calculateEMI() {
+        const principal = parseFloat(document.getElementById('loanAmount').value);
+        const rate = parseFloat(document.getElementById('interestRate').value);
+        const years = parseInt(document.getElementById('tenureYears').value);
+
+        // Update displays
+        document.getElementById('loanAmountDisplay').innerText = formatINR(principal);
+        document.getElementById('interestRateDisplay').innerText = rate.toFixed(1) + '%';
+        document.getElementById('tenureYearsDisplay').innerText = years + ' Years';
+
+        const monthlyRate = (rate / 12) / 100;
+        const totalMonths = years * 12;
+
+        const emi = (principal * monthlyRate * Math.pow(1 + monthlyRate, totalMonths)) / (Math.pow(1 + monthlyRate, totalMonths) - 1);
+        const totalPayment = emi * totalMonths;
+        const totalInterest = totalPayment - principal;
+
+        document.getElementById('emiResult').innerText = '₹ ' + Math.round(emi).toLocaleString('en-IN');
+        document.getElementById('totalInterestResult').innerText = '₹ ' + Math.round(totalInterest).toLocaleString('en-IN');
+        document.getElementById('totalPaymentResult').innerText = '₹ ' + Math.round(totalPayment).toLocaleString('en-IN');
+      }
+
+      function formatINR(amount) {
+        if (amount >= 10000000) {
+          return '₹ ' + (amount / 10000000).toFixed(2) + ' Cr';
+        } else if (amount >= 100000) {
+          return '₹ ' + (amount / 100000).toFixed(1) + ' Lakhs';
+        }
+        return '₹ ' + amount.toLocaleString('en-IN');
+      }
+
+      // 4. Form Submission formatted to WhatsApp
+      function handleFormSubmit(e) {
+        e.preventDefault();
+        const name = document.getElementById('userName').value.trim();
+        const phone = document.getElementById('userPhone').value.trim();
+        const propType = document.getElementById('propertyType').value;
+        const budget = document.getElementById('budgetRange').value;
+        const message = document.getElementById('userMessage').value.trim();
+
+        const text = `Hello Pratik ji,\n\nI would like to enquire about properties in Indore with AH Property:\n- Name: ${name}\n- Phone: ${phone}\n- Looking For: ${propType}\n- Budget: ${budget}${message ? `\n- Notes: ${message}` : ''}\n\nPlease get in touch with me.`;
+
+        const waUrl = `https://wa.me/919479427773?text=${encodeURIComponent(text)}`;
+        window.open(waUrl, '_blank');
+      }
+
+      // Initialize EMI calculation on load
+      document.addEventListener('DOMContentLoaded', () => {
+        calculateEMI();
+      });
+    </script>
+  </body>
+</html>
+
+
